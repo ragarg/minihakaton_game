@@ -10,12 +10,12 @@ public class PlayerMove : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            transform.position += new Vector3(-0.1f, 0.0f, 0.0f);
+            transform.position += Vector3.left * 0.1f;
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.position += new Vector3(0.1f, 0.0f, 0.0f);
+            transform.position += Vector3.right * 0.1f;
         }
-        transform.position += new Vector3(0, 0, 0.1f * speed);
+        transform.position += Vector3.forward * speed;
     }
 }
