@@ -11,12 +11,12 @@ public class CameraScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        delta = transform.position - target.GetChild(2).transform.position;
+        delta = transform.position - target.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = target.GetChild(2).transform.position + delta;
+        transform.position = target.position + delta;
     }
 }

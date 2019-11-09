@@ -16,6 +16,6 @@ public class PlayerMove : MonoBehaviour
         {
             transform.position += new Vector3(0.1f, 0.0f, 0.0f);
         }
-        transform.position -= new Vector3(0, 0, 0.1f * speed);
+        transform.position += new Vector3(0, 0, 0.1f * speed);
     }
 }
