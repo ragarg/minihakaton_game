@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{766E247D-2D1D-1BE7-BD86-012852C3A476}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scenes/CameraScript.cs">
+    <Files>
+      <File FileName="Assets/Scenes/CameraScript.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
