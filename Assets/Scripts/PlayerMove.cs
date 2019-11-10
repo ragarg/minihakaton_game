@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    public float speed;
+    public float speed = 1;
     private string right = "right";
     private string left = "left";
 
@@ -13,15 +13,21 @@ public class PlayerMove : MonoBehaviour
         transform.GetComponent<Animator>().SetBool(right, false);
         transform.GetComponent<Animator>().SetBool(left, false);
         if (Input.GetKey(KeyCode.A))
-        { 
-            transform.position += Vector3.left * 0.1f;
-            transform.GetComponent<Animator>().SetBool(left, true);
+        {
+            if (transform.position.x > -2)
+            {
+                transform.position += Vector3.left * 0.05f;
+                transform.GetComponent<Animator>().SetBool(left, true);
+            }
         }
         if (Input.GetKey(KeyCode.D))
         {
-            transform.position += Vector3.right * 0.1f;
-            transform.GetComponent<Animator>().SetBool(right, true);
+            if (transform.position.x < 2)
+            {
+                transform.position += Vector3.right * 0.05f;
+                transform.GetComponent<Animator>().SetBool(right, true);
+            }
         }
-        transform.position += Vector3.forward * speed;
+        transform.position += Vector3.forward * speed * Time.deltaTime;
     }
 }
